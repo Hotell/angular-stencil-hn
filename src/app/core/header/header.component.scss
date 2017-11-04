@@ -31,10 +31,10 @@ ole-icon {
 }
 
 .logo-inner {
-  width: 32px;
-  position: absolute;
-  left: 17px;
-  top: 18px;
+  // width: 32px;
+  // position: absolute;
+  // left: 17px;
+  // top: 18px;
   z-index: -1;
   height: 32px;
   border-radius: 50%;
@@ -46,8 +46,10 @@ ole-icon {
 }
 
 .logo {
-  width: 50px;
-  padding: 3px 8px 0;
+  // width: 50px;
+  // width: 112px;
+  height: 28px;
+  // padding: 3px 8px 0;
 
   @media #{$mobile-only} {
     width: 45px;

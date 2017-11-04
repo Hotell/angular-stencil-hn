@@ -1,9 +1,6 @@
 <ole-navbar>
   <ole-navbar-item>
-    <a class="home-link" routerLink="/news/1" routerLinkActive="active" (click)="scrollTop()">
-      <div class="logo-inner"></div>
-      <img class="logo" src="assets/images/logo.svg" alt="Logo">
-    </a>
+    <img routerLink="/news/1" class="logo" src="assets/images/hc-logo.png" alt="Logo" (click)="scrollTop()">
   </ole-navbar-item>
   <ole-navbar-item slot="navbar-start">
     <a routerLink="/newest/1" routerLinkActive="active" (click)="scrollTop()">new</a>
