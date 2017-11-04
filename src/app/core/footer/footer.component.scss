@@ -1,0 +1,23 @@
+@import "../../shared/scss/media";
+@import "../../shared/scss/theme_variables";
+
+#footer {
+  position: relative;
+  padding: 10px;
+  height: 60px;
+  letter-spacing: 0.7px;
+  text-align: center;
+
+  a {
+  	font-weight: bold;
+  	text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media #{$mobile-only} {
+    display: none;
+  }
+}

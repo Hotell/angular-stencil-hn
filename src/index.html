@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Angular 2 HN</title>
+  <base href="/">
+
+	<meta name="description" content="A Hacker News client built with Angular CLI, RxJS and Webpack" />
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@hdjirdeh">
+	<meta name="twitter:title" content="Angular 2 HN">
+	<meta name="twitter:description" content="A Hacker News client built with Angular CLI, RxJS and Webpack">
+	<meta name="twitter:creator" content="@hdjirdeh">
+	<meta name="twitter:image" content="assets/images/logo-loading.png">
+
+	<meta property="og:title" content="Angular 2 HN" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://angular2-hn.firebaseapp.com/" />
+	<meta property="og:image" content="assets/images/logo-loading.png" />
+	<meta property="og:description" content="A Hacker News client built with Angular CLI, RxJS and Webpack" />
+	<meta property="og:site_name" content="Angular 2 HN" />
+	<meta property="fb:admins" content="10202985971279760" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="theme-color" content="#b92b27">
+
+  <meta name="msapplication-TileColor" content="#b92b27">
+  <meta name="msapplication-TileImage" content="assets/icons/mstile-150x150.png">
+  <meta name="msapplication-config" content="assets/icons/browserconfig.xml">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#b92b27">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="assets/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/icons/favicon-16x16.png" sizes="16x16">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/icons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/icons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon-180x180.png">
+  <style>
+    #skip a {  position:absolute;  left:-10000px;  top:auto;  width:1px;  height:1px;  overflow:hidden;  }
+    #skip a:focus {  position:static;  width:auto;  height:auto;  }
+  </style>
+</head>
+<body>
+  <div id="skip"><a href="#content">skip to navigation</a></div>
+  <app-root></app-root>
+
+  <div class="app-loader" id="content">
+    <img class="logo" src="assets/images/logo.svg" alt="Logo">
+
+    <noscript>
+      <h4 style="font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica;">
+        Sorry, JavaScript needs to be enabled in order to run this application.
+      </h4>
+    </noscript>
+  </div>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-66348622-3', 'auto');
+
+  </script>
+</body>
+</html>
