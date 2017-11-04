@@ -1,25 +1,48 @@
+<ole-navbar>
+  <ole-navbar-item>
+    <a class="home-link" routerLink="/news/1" routerLinkActive="active" (click)="scrollTop()">
+      <div class="logo-inner"></div>
+      <img class="logo" src="assets/images/logo.svg" alt="Logo">
+    </a>
+  </ole-navbar-item>
+  <ole-navbar-item slot="navbar-start">
+    <a routerLink="/newest/1" routerLinkActive="active" (click)="scrollTop()">new</a>
+  </ole-navbar-item>
+  <ole-navbar-item slot="navbar-start">
+    <a routerLink="/show/1" routerLinkActive="active" (click)="scrollTop()">show</a>
+  </ole-navbar-item>
+  <ole-navbar-item slot="navbar-start">
+    <a routerLink="/ask/1" routerLinkActive="active" (click)="scrollTop()">ask</a>
+  </ole-navbar-item>
+  <ole-navbar-item slot="navbar-start">
+    <a routerLink="/jobs/1" routerLinkActive="active" (click)="scrollTop()">jobs</a>
+  </ole-navbar-item>
+  <ole-navbar-item slot="navbar-end">
+    <ole-icon type="cog" (click)="toggleSettings()"></ole-icon>
+  </ole-navbar-item>
+</ole-navbar>
 <header>
-    <div id="header">
-      <a class="home-link" routerLink="/news/1" routerLinkActive="active" (click)="scrollTop()">
-        <div class="logo-inner"></div>
-        <img class="logo" src="assets/images/logo.svg" alt="Logo">
-      </a>
-      <div class="header-text">
-        <div class="left">
-          <span class="header-nav">
-            <a routerLink="/newest/1" routerLinkActive="active" (click)="scrollTop()">new</a>
-              |
-            <a routerLink="/show/1" routerLinkActive="active" (click)="scrollTop()">show</a>
-              |
-            <a routerLink="/ask/1" routerLinkActive="active" (click)="scrollTop()">ask</a>
-              |
-            <a routerLink="/jobs/1" routerLinkActive="active" (click)="scrollTop()">jobs</a>
-          </span>
-        </div>
+  <!-- <div id="header"> -->
+  <!-- <a class="home-link" routerLink="/news/1" routerLinkActive="active" (click)="scrollTop()">
+      <div class="logo-inner"></div>
+      <img class="logo" src="assets/images/logo.svg" alt="Logo">
+    </a> -->
+  <!-- <div class="header-text">
+      <div class="left">
+        <span class="header-nav">
+          <a routerLink="/newest/1" routerLinkActive="active" (click)="scrollTop()">new</a>
+          |
+          <a routerLink="/show/1" routerLinkActive="active" (click)="scrollTop()">show</a>
+          |
+          <a routerLink="/ask/1" routerLinkActive="active" (click)="scrollTop()">ask</a>
+          |
+          <a routerLink="/jobs/1" routerLinkActive="active" (click)="scrollTop()">jobs</a>
+        </span>
       </div>
-      <div class="info">
-        <img class="settings" src="assets/images/cog.svg" alt="Settings" (click)="toggleSettings()">
-      </div>
-    </div>
-    <app-settings *ngIf="settings.showSettings"></app-settings>
-  </header>
+    </div> -->
+  <!-- <div class="info">
+      <img class="settings" src="assets/images/cog.svg" alt="Settings" (click)="toggleSettings()">
+    </div> -->
+  <!-- </div> -->
+  <app-settings *ngIf="settings.showSettings"></app-settings>
+</header>
