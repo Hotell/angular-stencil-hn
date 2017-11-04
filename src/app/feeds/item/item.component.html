@@ -1,6 +1,9 @@
-<div [ngStyle]="{'margin-bottom': settings.listSpacing+'px'}">
+<ole-box [ngStyle]="{'margin-bottom': settings.listSpacing+'px'}">
+  <div slot="left" class="score">{{ item.points }} ★</div>
+
   <p *ngIf="hasUrl">
-    <a class="title" [ngStyle]="{'font-size': settings.titleFontSize+'px'}" href="{{item.url}}" [attr.target]="settings.openLinkInNewTab ? '_blank' : null" [attr.rel]="settings.openLinkInNewTab ? 'noopener' : null">
+    <a class="title" [ngStyle]="{'font-size': settings.titleFontSize+'px'}" href="{{item.url}}" [attr.target]="settings.openLinkInNewTab ? '_blank' : null"
+      [attr.rel]="settings.openLinkInNewTab ? 'noopener' : null">
       {{item.title}}
     </a>
     <span *ngIf="item.domain" class="domain">({{item.domain}})</span>
@@ -12,19 +15,20 @@
   </p>
   <div class="subtext-palm">
     <div class="details" *ngIf="item.type !== 'job'">
-      <span class="name"><a [routerLink]="['/user', item.user]" routerLinkActive="active">{{item.user}}</a></span>
-      <span class="right">{{item.points}} ★</span>
+      <span class="name">
+        <a [routerLink]="['/user', item.user]" routerLinkActive="active">{{item.user}}</a>
+      </span>
+      <span class="right">{{item.points}} </span>
     </div>
     <div class="details">
-    {{ item.time_ago }}
-    <a [routerLink]="['/item', item.id]" routerLinkActive="active" class="comment-number" *ngIf="item.type !== 'job'"> •
-      {{item.comments_count | comment }}
-    </a>
+      {{ item.time_ago }}
+      <a [routerLink]="['/item', item.id]" routerLinkActive="active" class="comment-number" *ngIf="item.type !== 'job'"> • {{item.comments_count | comment }}
+      </a>
     </div>
   </div>
   <div class="subtext-laptop">
     <span *ngIf="item.type !== 'job'">
-      {{item.points}} points by
+      points by
       <a [routerLink]="['/user', item.user]" routerLinkActive="active">{{item.user}}</a>
     </span>
     <span [class.item-details]="item.type !== 'job'">
@@ -36,4 +40,4 @@
       </span>
     </span>
   </div>
-</div>
+</ole-box>

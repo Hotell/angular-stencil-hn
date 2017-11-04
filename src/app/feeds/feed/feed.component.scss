@@ -1,5 +1,5 @@
-@import "../../shared/scss/media";
-@import "../../shared/scss/theme_variables";
+@import '../../shared/scss/media';
+@import '../../shared/scss/theme_variables';
 
 a {
   text-decoration: none;
@@ -7,7 +7,7 @@ a {
 
   &:hover {
     text-decoration: underline;
-  };
+  }
 }
 
 ol {
@@ -22,8 +22,8 @@ ol {
 
   li {
     position: relative;
-    -webkit-transition: background-color .2s ease;
-    transition: background-color .2s ease;
+    -webkit-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
   }
 }
 
@@ -37,17 +37,15 @@ ol {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  -webkit-transition: opacity .2s ease;
-  transition: opacity .2s ease;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
   box-sizing: border-box;
   padding: 8px 0;
   z-index: 0;
 }
 
 .post {
-  padding: 10px 0 10px 5px;
   transition: background-color 0.2s ease;
-  border-bottom: 1px solid #CECECB;
 
   .itemNum {
     color: #696969;
@@ -62,7 +60,6 @@ ol {
 .item-block {
   display: block;
 }
-
 
 .nav {
   padding: 10px 40px;

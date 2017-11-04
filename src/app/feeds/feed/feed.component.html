@@ -4,14 +4,15 @@
 
   <div *ngIf="items">
     <p class="job-header" *ngIf="feedType === 'jobs'">
-      These are jobs at startups that were funded by Y Combinator.
-      You can also get a job at a YC startup through <a href="https://triplebyte.com/?ref=yc_jobs">Triplebyte</a>.
+      These are jobs at startups that were funded by Y Combinator. You can also get a job at a YC startup through
+      <a href="https://triplebyte.com/?ref=yc_jobs">Triplebyte</a>.
     </p>
-    <ol *ngIf="feedType !== 'new'" [class.list-margin]="feedType !== 'jobs'" start="{{ listStart }}">
-      <li *ngFor="let item of items" class="post">
-        <item class="item-block" [item]="item"></item>
-      </li>
-    </ol>
+    <div *ngIf="feedType !== 'new'" [class.list-margin]="feedType !== 'jobs'">
+      <ole-column *ngFor="let item of items">
+        <item class="item-block" [item]="item" class="post"></item>
+      </ole-column>
+    </div>
+
     <div class="nav">
       <a *ngIf="listStart !== 1" [routerLink]="['/' + feedType, pageNum - 1]" routerLinkActive="active" class="prev">
         ‹ Prev
