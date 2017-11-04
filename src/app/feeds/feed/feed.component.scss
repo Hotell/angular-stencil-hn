@@ -61,40 +61,6 @@ ol {
   display: block;
 }
 
-.nav {
-  padding: 10px 40px;
-  margin-top: 10px;
-  font-size: 17px;
-
-  a {
-    @media #{$mobile-only} {
-      text-decoration: none;
-    }
-  }
-
-  @media #{$mobile-only} {
-    margin: 20px 0;
-    text-align: center;
-    padding: 10px 80px;
-    height: 20px;
-  }
-
-  .prev {
-    padding-right: 20px;
-
-    @media #{$mobile-only} {
-      float: left;
-      padding-right: 0;
-    }
-  }
-
-  .more {
-    @media #{$mobile-only} {
-      float: right;
-    }
-  }
-}
-
 .job-header {
   font-size: 15px;
   padding: 0 40px 10px;

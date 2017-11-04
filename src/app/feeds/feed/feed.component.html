@@ -13,13 +13,15 @@
       </ole-column>
     </div>
 
-    <div class="nav">
-      <a *ngIf="listStart !== 1" [routerLink]="['/' + feedType, pageNum - 1]" routerLinkActive="active" class="prev">
+    <ole-pagination>
+      <ole-pagination-previous slot="prev" *ngIf="listStart !== 1" [routerLink]="['/' + feedType, pageNum - 1]" routerLinkActive="active"
+        class="prev">
         ‹ Prev
-      </a>
-      <a *ngIf="items.length === 30" [routerLink]="['/' + feedType, pageNum + 1]" routerLinkActive="active" class="more">
+      </ole-pagination-previous>
+      <ole-pagination-next slot="next" *ngIf="items.length === 30" [routerLink]="['/' + feedType, pageNum + 1]" routerLinkActive="active"
+        class="more">
         More ›
-      </a>
-    </div>
+      </ole-pagination-next>
+    </ole-pagination>
   </div>
 </div>
