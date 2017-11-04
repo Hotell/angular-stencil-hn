@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "webpack-dev-server --port=4200",
+    "start": "webpack-dev-server --port=4200 --history-api-fallback",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "karma start ./karma.conf.js",
     "static-serve": "cd dist && live-server --port=4200 --host=localhost --entry-file=/index.html",
